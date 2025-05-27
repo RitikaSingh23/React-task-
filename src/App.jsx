@@ -13,6 +13,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Spinner from 'react-bootstrap/Spinner';
 import m1 from './image/m1.jpeg';
 import m2 from './image/m2.jpeg';
 import m3 from './image/m3.jpeg';
@@ -67,7 +68,7 @@ const App=()=>{
 
     <br></br>
 
-    <Container>
+     <Container>
       <h1 style={{color:"blue",display:"flex" ,justifyContent:"center",fontFamily:"cursive"}}>For Kids</h1>
       <Row>
         <Col>
@@ -128,7 +129,7 @@ const App=()=>{
       </Row>
 
 
-      <br></br>
+      {/* <br></br>
 
       <h1 style={{color:"blue",display:"flex" ,justifyContent:"center",fontFamily:"cursive"}}>For Mens</h1>
       <Row>
@@ -221,8 +222,7 @@ const App=()=>{
         </Card.Body>
         </Card>
         </Col>
-
-        <Col>
+         <Col>
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={w3} style={{width:"286px",height: "300px"}}/>
         <Card.Body>
@@ -249,8 +249,35 @@ const App=()=>{
         </Card.Body>
         </Card>
         </Col>
-      </Row>
-    </Container>
+      </Row> */}
+    </Container> 
+<br></br><br></br>
+    <Button variant="primary">Primary</Button>
+      <Button variant="secondary">Secondary</Button>
+      <Button variant="success">Success</Button>
+      <Button variant="warning">Warning</Button>
+      <Button variant="danger">Danger</Button>
+      <Button variant="info">Info</Button>
+      <Button variant="light">Light</Button>
+      <Button variant="dark">Dark</Button>
+      <Button variant="link">Link</Button>
+
+      <Spinner animation="border" variant="primary" />
+      <Spinner animation="border" variant="secondary" />
+      <Spinner animation="border" variant="success" />
+      <Spinner animation="border" variant="danger" />
+      <Spinner animation="border" variant="warning" />
+      <Spinner animation="border" variant="info" />
+      <Spinner animation="border" variant="light" />
+      <Spinner animation="border" variant="dark" />
+      <Spinner animation="grow" variant="primary" />
+      <Spinner animation="grow" variant="secondary" />
+      <Spinner animation="grow" variant="success" />
+      <Spinner animation="grow" variant="danger" />
+      <Spinner animation="grow" variant="warning" />
+      <Spinner animation="grow" variant="info" />
+      <Spinner animation="grow" variant="light" />
+      <Spinner animation="grow" variant="dark" /> 
     </>
   )
 }
