@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import men from './image/mimages.jpeg';
 import wmen from './image/wimages.jpeg';
 import kid from './image/kimages.jpeg';
-import k1 from './image/k1.jpeg';
+import k1 from './image/k1.jpeg'; 
 import k2 from './image/k2.jpeg';
 import k3 from './image/k3.jpeg';
 import k4 from './image/k4.jpeg';
@@ -13,7 +13,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Spinner from 'react-bootstrap/Spinner';
+// import Spinner from 'react-bootstrap/Spinner';
 import m1 from './image/m1.jpeg';
 import m2 from './image/m2.jpeg';
 import m3 from './image/m3.jpeg';
@@ -22,7 +22,6 @@ import w1 from './image/w1.jpeg';
 import w2 from './image/w2.jpeg';
 import w3 from './image/w3.jpeg';
 import w4 from './image/w4.jpeg';
-
 const App=()=>{
   return(
     <>
@@ -129,7 +128,7 @@ const App=()=>{
       </Row>
 
 
-      {/* <br></br>
+      <br></br>
 
       <h1 style={{color:"blue",display:"flex" ,justifyContent:"center",fontFamily:"cursive"}}>For Mens</h1>
       <Row>
@@ -249,10 +248,10 @@ const App=()=>{
         </Card.Body>
         </Card>
         </Col>
-      </Row> */}
+      </Row>
     </Container> 
 <br></br><br></br>
-    <Button variant="primary">Primary</Button>
+    {/* <Button variant="primary">Primary</Button>
       <Button variant="secondary">Secondary</Button>
       <Button variant="success">Success</Button>
       <Button variant="warning">Warning</Button>
@@ -277,8 +276,46 @@ const App=()=>{
       <Spinner animation="grow" variant="warning" />
       <Spinner animation="grow" variant="info" />
       <Spinner animation="grow" variant="light" />
-      <Spinner animation="grow" variant="dark" /> 
-    </>
+      <Spinner animation="grow" variant="dark" /> */}
+
+    <footer className="bg-primary text-white text-center text-lg-start mt-5">
+     <Container className="p-4">
+     <Row>
+      <Col lg={6} md={12} className="mb-4 mb-md-0">
+        <h5 className="text-uppercase">Book Your Feets</h5>
+        <p>
+          Discover the best in footwear for men, women, and kids. Quality, style, and comfort – all in one place.
+        </p>
+      </Col>
+
+      <Col lg={3} md={6} className="mb-4 mb-md-0">
+        <h5 className="text-uppercase">Quick Links</h5>
+        <ul className="list-unstyled mb-0">
+          <li><a href="#home" className="text-white text-decoration-none">Home</a></li>
+          <li><a href="#features" className="text-white text-decoration-none">Features</a></li>
+          <li><a href="#contact" className="text-white text-decoration-none">Contact Us</a></li>
+          <li><a href="#about" className="text-white text-decoration-none">About</a></li>
+        </ul>
+      </Col>
+
+      <Col lg={3} md={6} className="mb-4 mb-md-0">
+        <h5 className="text-uppercase">Contact</h5>
+        <ul className="list-unstyled mb-0">
+          <li>Email: support@bookyourfeets.com</li>
+          <li>Phone: +91-9876543210</li>
+          <li>Location: Delhi, India</li>
+        </ul>
+      </Col>
+     </Row>
+     </Container>
+
+     <div className="text-center p-3 bg-dark">
+       © {new Date().getFullYear()} Book Your Feets. All Rights Reserved.
+     </div>
+    </footer>
+
+
+    </> 
   )
 }
 
